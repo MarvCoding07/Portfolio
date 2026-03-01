@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobbys – Marvin Schneider</title>
+  <meta name="description" content="Die Hobbys von Marvin Schneider: Feuerwehr, Armbrustschiessen, Coding & IT, Blasmusik." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    /* Hobby card accent border on hover, per category */
+    .hc-fire:hover    { border-color: rgba(239, 68, 68, 0.5) !important; box-shadow: 0 10px 40px rgba(239, 68, 68, 0.15) !important; }
+    .hc-cross:hover   { border-color: rgba(34, 197, 94, 0.5) !important; box-shadow: 0 10px 40px rgba(34, 197, 94, 0.15) !important; }
+    .hc-code:hover    { border-color: rgba(6, 182, 212, 0.5) !important; box-shadow: 0 10px 40px rgba(6, 182, 212, 0.15) !important; }
+    .hc-music:hover   { border-color: rgba(59, 130, 246, 0.5) !important; box-shadow: 0 10px 40px rgba(59, 130, 246, 0.15) !important; }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────── -->
+  <nav class="navbar" aria-label="Hauptnavigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span>MS</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über mich</a></li>
+        <li><a href="hobbies.html">Hobbys</a></li>
+        <li><a href="https://marv.cloud" target="_blank" rel="noopener" class="nav-marv"><i class="fa-solid fa-cloud fa-sm"></i> MARV</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">Über mich</a>
+    <a href="hobbies.html">Hobbys</a>
+    <a href="https://marv.cloud" target="_blank" rel="noopener" class="nav-marv"><i class="fa-solid fa-cloud fa-sm"></i> MARV Website</a>
+  </nav>
+
+  <!-- ── Page Hero ──────────────────────── -->
+  <div class="page-hero" style="background: radial-gradient(ellipse at 40% 0%, rgba(6,182,212,0.1) 0%, transparent 55%);">
+    <div class="container">
+      <span class="section-label">Was mich bewegt</span>
+      <h1 style="margin-bottom:1rem;">Meine <span class="gradient-text">Hobbys</span></h1>
+      <p>Zwischen Ausbildung und Projekten bleibt immer Zeit für das, was wirklich Spass macht.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── Hobby Cards ────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="grid-2">
+
+        <!-- Feuerwehr -->
+        <div class="hobby-card hc-fire">
+          <div class="hobby-icon-wrap" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <h3>Feuerwehr</h3>
+          <p>
+            Als aktives Mitglied der Feuerwehr engagiere ich mich für die Sicherheit und den
+            Schutz meiner Gemeinde. Regelmässige Übungen, Einsätze und die Kameradschaft im Team
+            machen dieses Hobby zu einem wichtigen Teil meines Lebens. Hilfsbereitschaft und
+            Verantwortungsbewusstsein stehen hier an erster Stelle.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+            <span class="tag"><i class="fa-solid fa-users fa-xs"></i> Teamarbeit</span>
+            <span class="tag"><i class="fa-solid fa-shield-halved fa-xs"></i> Sicherheit</span>
+            <span class="tag"><i class="fa-solid fa-heart fa-xs"></i> Gemeinschaft</span>
+          </div>
+        </div>
+
+        <!-- Armbrustschiessen -->
+        <div class="hobby-card hc-cross">
+          <div class="hobby-icon-wrap" style="background: rgba(34, 197, 94, 0.15); color: #4ade80;">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3>Armbrustschiessen</h3>
+          <p>
+            Armbrustschiessen ist für mich weit mehr als ein Freizeitsport – es ist Meditation mit
+            Präzision. Die Ruhe, die man braucht, um den Pfeil perfekt auszurichten, schult
+            Konzentration und Geduld. Eine alte Sportart, die in der Schweiz eine lange Tradition hat
+            und mich seit Jahren begeistert.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+            <span class="tag"><i class="fa-solid fa-crosshairs fa-xs"></i> Präzision</span>
+            <span class="tag"><i class="fa-solid fa-brain fa-xs"></i> Konzentration</span>
+            <span class="tag"><i class="fa-solid fa-trophy fa-xs"></i> Tradition</span>
+          </div>
+        </div>
+
+        <!-- Coding & IT -->
+        <div class="hobby-card hc-code">
+          <div class="hobby-icon-wrap" style="background: rgba(6, 182, 212, 0.15); color: #67e8f9;">
+            <i class="fa-solid fa-terminal"></i>
+          </div>
+          <h3>Coding &amp; IT Projekte</h3>
+          <p>
+            Auch nach Feierabend sitze ich gerne am Rechner und entwickle eigene Projekte. Von kleinen
+            Automatisierungsscripts über Webapps bis zu Homelab-Experimenten – Technologie ist meine
+            Leidenschaft. Neue Frameworks ausprobieren, an Open-Source-Projekten mitwirken und
+            kreative Lösungen für alltägliche Probleme finden macht mir grossen Spass.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+            <span class="tag"><i class="fa-solid fa-code fa-xs"></i> Webentwicklung</span>
+            <span class="tag"><i class="fa-solid fa-server fa-xs"></i> Homelab</span>
+            <span class="tag"><i class="fa-solid fa-robot fa-xs"></i> Automation</span>
+            <span class="tag"><i class="fa-brands fa-github fa-xs"></i> Open Source</span>
+          </div>
+        </div>
+
+        <!-- Blasmusik -->
+        <div class="hobby-card hc-music">
+          <div class="hobby-icon-wrap" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa;">
+            <i class="fa-solid fa-music"></i>
+          </div>
+          <h3>Blasmusik</h3>
+          <p>
+            In der Blasmusik lebe ich Teamgeist und musikalische Kreativität aus. Im Verein gemeinsam
+            zu musizieren, sich auf Konzerte vorzubereiten und die Freude an Musik mit anderen zu
+            teilen – das ist ein wunderbarer Ausgleich zum technischen Alltag. Musik verbindet, und
+            das Blasmusikkorps ist für mich wie eine zweite Familie.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+            <span class="tag"><i class="fa-solid fa-music fa-xs"></i> Musik</span>
+            <span class="tag"><i class="fa-solid fa-users fa-xs"></i> Verein</span>
+            <span class="tag"><i class="fa-solid fa-star fa-xs"></i> Konzerte</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Fun Facts ──────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="section-heading" style="text-align:center;">
+        <span class="section-label">Über mich</span>
+        <h2>Ein paar Facts</h2>
+      </div>
+
+      <div class="grid-3 mt-4">
+        <div class="card" style="text-align:center;">
+          <div class="card-icon icon-orange" style="margin-inline:auto; font-size:1.6rem; width:56px; height:56px;">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <h3 style="font-size:2rem; font-family:'Space Grotesk',sans-serif; background:var(--gradient-text); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+            Aktiv
+          </h3>
+          <p style="font-size:0.88rem;">bei der Feuerwehr – für Sicherheit und Kameradschaft</p>
+        </div>
+
+        <div class="card" style="text-align:center;">
+          <div class="card-icon icon-cyan" style="margin-inline:auto; font-size:1.6rem; width:56px; height:56px;">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 style="font-size:2rem; font-family:'Space Grotesk',sans-serif; background:var(--gradient-text); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+            Always
+          </h3>
+          <p style="font-size:0.88rem;">coding – egal ob Ausbildung, Beruf oder Freizeit</p>
+        </div>
+
+        <div class="card" style="text-align:center;">
+          <div class="card-icon icon-blue" style="margin-inline:auto; font-size:1.6rem; width:56px; height:56px;">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3 style="font-size:2rem; font-family:'Space Grotesk',sans-serif; background:var(--gradient-text); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+            4+
+          </h3>
+          <p style="font-size:0.88rem;">Vereine und Tätigkeiten – Vielseitigkeit als Stärke</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── CTA: Back / MARV ───────────────── -->
+  <section style="padding-block:3rem;">
+    <div class="container" style="text-align:center;">
+      <h2 style="margin-bottom:0.75rem;">Neugierig geworden?</h2>
+      <p style="margin-inline:auto; margin-bottom:2rem;">
+        Erfahre mehr über mich oder schau dir meine Webentwicklungs-Dienstleistungen auf marv.cloud an.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
+        <a href="about.html" class="btn btn-outline">
+          <i class="fa-solid fa-user"></i> Über mich
+        </a>
+        <a href="https://marv.cloud" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> MARV Website besuchen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Über mich</a>
+        <a href="hobbies.html">Hobbys</a>
+        <a href="https://marv.cloud" target="_blank" rel="noopener">MARV</a>
+      </div>
+      <p><a href="mailto:marvin@mar-vin.ch" style="color:var(--primary-light);">marvin@mar-vin.ch</a></p>
+      <p style="margin-top:0.4rem;">&copy; 2026 Marvin Schneider · Gebaut mit Leidenschaft ❤</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

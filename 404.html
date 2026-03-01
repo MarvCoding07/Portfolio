@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 – Seite nicht gefunden · Marvin Schneider</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .error-glow-1 {
+      position: absolute;
+      width: 500px; height: 500px;
+      background: rgba(124, 58, 237, 0.15);
+      border-radius: 50%;
+      filter: blur(120px);
+      top: -100px; left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+    .error-glow-2 {
+      position: absolute;
+      width: 300px; height: 300px;
+      background: rgba(6, 182, 212, 0.1);
+      border-radius: 50%;
+      filter: blur(100px);
+      bottom: 50px; right: 10%;
+      pointer-events: none;
+    }
+
+    .error-content {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+    }
+
+    .error-code {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(7rem, 20vw, 12rem);
+      font-weight: 700;
+      line-height: 1;
+      background: var(--gradient-text);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.04em;
+    }
+
+    .error-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--muted);
+    }
+
+    .error-title {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      margin-bottom: 1rem;
+    }
+
+    .error-desc {
+      margin-inline: auto;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+
+    .error-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────── -->
+  <nav class="navbar" aria-label="Hauptnavigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span>MS</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über mich</a></li>
+        <li><a href="hobbies.html">Hobbys</a></li>
+        <li><a href="https://marv.cloud" target="_blank" rel="noopener" class="nav-marv"><i class="fa-solid fa-cloud fa-sm"></i> MARV</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">Über mich</a>
+    <a href="hobbies.html">Hobbys</a>
+    <a href="https://marv.cloud" target="_blank" rel="noopener" class="nav-marv"><i class="fa-solid fa-cloud fa-sm"></i> MARV Website</a>
+  </nav>
+
+  <!-- ── 404 Content ────────────────────── -->
+  <main class="error-page">
+    <div class="error-glow-1"></div>
+    <div class="error-glow-2"></div>
+
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <div class="error-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+      <h1 class="error-title">Seite nicht gefunden</h1>
+      <p class="error-desc">
+        Diese Seite existiert nicht oder wurde verschoben.<br>
+        Aber keine Sorge – hier sind ein paar Wege zurück.
+      </p>
+      <div class="error-links">
+        <a href="index.html" class="btn btn-primary">
+          <i class="fa-solid fa-house"></i> Zur Startseite
+        </a>
+        <a href="about.html" class="btn btn-outline">
+          <i class="fa-solid fa-user"></i> Über mich
+        </a>
+        <a href="hobbies.html" class="btn btn-outline">
+          <i class="fa-solid fa-heart"></i> Hobbys
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Über mich</a>
+        <a href="hobbies.html">Hobbys</a>
+        <a href="https://marv.cloud" target="_blank" rel="noopener">MARV</a>
+      </div>
+      <p><a href="mailto:marvin@mar-vin.ch" style="color:var(--primary-light);">marvin@mar-vin.ch</a></p>
+      <p style="margin-top:0.4rem;">&copy; 2026 Marvin Schneider · Gebaut mit Leidenschaft ❤</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über mich – Marvin Schneider</title>
+  <meta name="description" content="Lerne Marvin Schneider kennen – ICT-Lernender, Webentwickler und leidenschaftlicher Hobby-Entwickler." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────── -->
+  <nav class="navbar" aria-label="Hauptnavigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span>MS</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über mich</a></li>
+        <li><a href="hobbies.html">Hobbys</a></li>
+        <li><a href="https://marv.cloud" target="_blank" rel="noopener" class="nav-marv"><i class="fa-solid fa-cloud fa-sm"></i> MARV</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">Über mich</a>
+    <a href="hobbies.html">Hobbys</a>
+    <a href="https://marv.cloud" target="_blank" rel="noopener" class="nav-marv"><i class="fa-solid fa-cloud fa-sm"></i> MARV Website</a>
+  </nav>
+
+  <!-- ── Page Hero ──────────────────────── -->
+  <div class="page-hero" style="background: radial-gradient(ellipse at 60% 0%, rgba(124,58,237,0.12) 0%, transparent 60%);">
+    <div class="container">
+      <span class="section-label">Meine Geschichte</span>
+      <h1 style="margin-bottom:1rem;">Über <span class="gradient-text">mich</span></h1>
+      <p>ICT-Lernender mit Leidenschaft für Webentwicklung, Technik und allem was zwischen Bits und Bytes liegt.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── Hauptbereich ───────────────────── -->
+  <section>
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Linke Spalte: Infokarten + Skills -->
+        <div>
+          <!-- Profilfoto – ersetze den Platzhalter mit: <img src="images/profile.jpg" alt="Marvin Schneider" class="profile-img"> -->
+          <div class="profile-img-wrap">
+            <img src="assets/marvin.jpg" alt="Marvin Schneider" class="profile-img">
+          </div>
+
+          <span class="section-label">Steckbrief</span>
+          <h2 style="font-size:1.6rem; margin-bottom:1.25rem;">Marvin Schneider</h2>
+
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fa-solid fa-user"></i>
+              <div>
+                <div class="info-label">Name</div>
+                <div class="info-value">Marvin Schneider</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <div class="info-label">Beruf / Ausbildung</div>
+                <div class="info-value">ICT-Lernender (Fachmann)</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-laptop-code"></i>
+              <div>
+                <div class="info-label">Nebentätigkeit</div>
+                <div class="info-value">Webentwickler bei MARV</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-map-marker-alt"></i>
+              <div>
+                <div class="info-label">Standort</div>
+                <div class="info-value">Schweiz <span style="font-size:1rem;">🇨🇭</span></div>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-language"></i>
+              <div>
+                <div class="info-label">Sprachen</div>
+                <div class="info-value">Deutsch (Muttersprache) · Englisch</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <div class="info-label">E-Mail</div>
+                <div class="info-value"><a href="mailto:marvin@mar-vin.ch" style="color:var(--primary-light);">marvin@mar-vin.ch</a></div>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-globe"></i>
+              <div>
+                <div class="info-label">Website</div>
+                <div class="info-value"><a href="https://marv.cloud" target="_blank" rel="noopener" style="color:var(--primary-light);">marv.cloud</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div style="margin-top:2rem;">
+            <span class="section-label">Skills</span>
+            <h3 style="margin-block: 0.5rem 1rem;">Technologien &amp; Tools</h3>
+            <div class="skills-grid">
+              <span class="skill-chip">HTML</span>
+              <span class="skill-chip">CSS</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">TypeScript</span>
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">Linux</span>
+              <span class="skill-chip">Windows Server</span>
+              <span class="skill-chip">Netzwerke</span>
+              <span class="skill-chip">TCP/IP</span>
+              <span class="skill-chip">VS Code</span>
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rechte Spalte: Text + Timeline -->
+        <div>
+          <span class="section-label">Wer bin ich?</span>
+          <h2 style="font-size:1.6rem; margin-bottom:1.25rem;">Meine Geschichte</h2>
+
+          <div style="display:flex; flex-direction:column; gap:1rem; margin-bottom:2.5rem;">
+            <p style="max-width:100%;">
+              Hallo! Ich bin Marvin – ein leidenschaftlicher Technik-Enthusiast aus der Schweiz.
+              Momentan absolviere ich meine Ausbildung zum ICT-Fachmann und tauche täglich tiefer
+              in die Welt der Informationstechnologie ein.
+            </p>
+            <p style="max-width:100%;">
+              Parallel dazu entwickle ich Websites und Webanwendungen unter meinem eigenen Label
+              <a href="https://marv.cloud" target="_blank" rel="noopener" style="color:var(--primary-light); font-weight:500;">MARV</a>.
+              Was als Hobby begann, hat sich zu einer echten Nebentätigkeit entwickelt, bei der ich
+              Kunden mit modernen, massgeschneiderten Webprojekten unterstütze.
+            </p>
+            <p style="max-width:100%;">
+              Neben der Technik bin ich auch ein Mensch mit vielen Interessen: Als Mitglied der
+              Feuerwehr engagiere ich mich für meine Gemeinschaft, beim Armbrustschiessen trainiere
+              ich Konzentration und Präzision, in der Blasmusik lebe ich Teamgeist und Kreativität
+              aus – und natürlich verbringe ich auch viel Zeit mit eigenen Coding-Projekten.
+            </p>
+          </div>
+
+          <!-- Werdegang -->
+          <span class="section-label">Werdegang</span>
+          <h3 style="margin-block: 0.5rem 1.5rem;">Ausbildung &amp; Erfahrung</h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-line">
+                <div class="timeline-dot"></div>
+                <div class="timeline-bar"></div>
+              </div>
+              <div class="timeline-content">
+                <h4>ICT-Fachmann EFZ – Lehrgang</h4>
+                <div class="timeline-meta"><i class="fa-solid fa-calendar-alt fa-xs"></i> Aktuell &nbsp;·&nbsp; <i class="fa-solid fa-building fa-xs"></i> Betrieb &amp; Berufsschule</div>
+                <p>Grundlagen und Vertiefung in Systemtechnik, Netzwerke, IT-Support, Skripting und IT-Projektarbeit.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-line">
+                <div class="timeline-dot"></div>
+                <div class="timeline-bar"></div>
+              </div>
+              <div class="timeline-content">
+                <h4>Webentwicklung – MARV Website</h4>
+                <div class="timeline-meta"><i class="fa-solid fa-calendar-alt fa-xs"></i> Laufend &nbsp;·&nbsp; <i class="fa-solid fa-globe fa-xs"></i> marv.cloud</div>
+                <p>Aufbau und Betrieb einer eigenen Webentwicklungs-Nebentätigkeit – von der Konzeption bis zum Go-live für Kunden.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-line">
+                <div class="timeline-dot"></div>
+                <div class="timeline-bar"></div>
+              </div>
+              <div class="timeline-content">
+                <h4>Hobby-Entwicklung &amp; IT-Projekte</h4>
+                <div class="timeline-meta"><i class="fa-solid fa-calendar-alt fa-xs"></i> Seit Jahren &nbsp;·&nbsp; <i class="fa-solid fa-house fa-xs"></i> Privat</div>
+                <p>Selbstständiges Lernen und Umsetzen von Projekten – von kleinen Skripts bis zu komplexeren Anwendungen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── MARV Highlight ─────────────────── -->
+  <section>
+    <div class="container">
+      <div class="project-featured">
+        <div class="project-featured-inner" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:2rem;">
+          <div>
+            <span class="section-label">Nebentätigkeit</span>
+            <h2 style="font-size:1.8rem; margin-bottom:0.75rem;">MARV Website</h2>
+            <p style="max-width:520px;">
+              Unter <strong style="color:var(--heading);">marv.cloud</strong> biete ich professionelle Webentwicklung an –
+              für kleine Unternehmen, Vereine und alle, die eine moderne Online-Präsenz aufbauen möchten.
+            </p>
+            <div class="project-tag-row">
+              <span class="tag">Webentwicklung</span>
+              <span class="tag">Freelance</span>
+              <span class="tag">Kundenprojekte</span>
+            </div>
+          </div>
+          <a href="https://marv.cloud" target="_blank" rel="noopener" class="btn btn-primary" style="flex-shrink:0;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> marv.cloud
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Über mich</a>
+        <a href="hobbies.html">Hobbys</a>
+        <a href="https://marv.cloud" target="_blank" rel="noopener">MARV</a>
+      </div>
+      <p><a href="mailto:marvin@mar-vin.ch" style="color:var(--primary-light);">marvin@mar-vin.ch</a></p>
+      <p style="margin-top:0.4rem;">&copy; 2026 Marvin Schneider · Gebaut mit Leidenschaft ❤</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
