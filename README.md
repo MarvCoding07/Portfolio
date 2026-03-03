@@ -64,4 +64,4 @@ error_page 404 /404.html;
 ## Kontakt
 
 - **E-Mail:** marvin@mar-vin.ch
-- **Website:** https://marv.cloud
+- **Website:** https://marvinschneider.ch
